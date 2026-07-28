@@ -1,11 +1,12 @@
 [
     {
         "id": 1,
-        "nombre": "iPhone 12",
-        "descripcion": "64 GB, excelente estado.",
-        "precio": "6800",
-        "imagen": "img/iPhone.jpg",
-        "categoria": "Electronica"
+        "nombre": "Casa para Perro de Madera|Con compartimentos ",
+        "descripcion": "Casa para perro fabricada en madera resistente, ideal para mantener a tu mascota protegida del sol. <br><br><b>Características:</b> <br>✅ Elaborada con madera calida resistente.<br>✅ Acabado con protector para mayor durabilidad.<br>✅ Dos compartimentos para alimento.<br>✅ Base elevada que evita el contacto directo con el suelo.<br>✅ Amplia entrada para mayor comodidad con ventilacion en ambos costados.<br>✅ Ideal para perros chicos y medianos <br>Perfecta para patios, jardines y ranchos.<br><br>📍 Entrega en Ciudad Valles. <br><b>💬 Envíame mensaje para más información, medidas o cotización personalizada.",
+        "precio": "2900",
+        "imagen": "img/Casa para Perro.jpg",
+        "categoria": "Muebles",
+        "estado": "Nuevo"
     },
     {
         "id": 2,
