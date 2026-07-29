@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Productos</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark shadow">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="index.html">
+                Mi Catálogo
+            </a>
+
+            <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="menu">
+
+                <ul class="navbar-nav ms-auto">
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">
+                            Inicio
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link active" href="productos.html">
+                            Productos
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="contacto.html">
+                            Contacto
+                        </a>
+                    </li>
+
+                </ul>
+
+            </div>
+        </div>
+    </nav>
+
+    <section class="container my-5">
+
+        <h1 class="text-center mb-5">
+            Todos los productos
+        </h1>
+
+        <!--Buscador-->
+        <div class="row mb-4">
+            <div class="col-md-6 mx-auto">
+                <input type="text" id="buscar" class="form-control form-control-lg" placeholder="🔍 Buscar producto">
+            </div>
+        </div>
+        
+        <div class="row mb-4">
+
+            <div class="col-md-4 mx-auto">
+
+                <select id="categoria" class="form-select">
+
+                    <option value="Todas">Todas las Categorias</option>
+                    <option value="Reposteria">Reposteria</option>
+                    <option value="Bicicletas">Bicicletas</option>
+                    <option value="Mascotas">Mascotas</option>
+
+                </select>
+
+            </div>
+
+        </div>
+
+        <!-- Aquí se mostrarán los productos -->
+        <div class="row" id="productos">
+
+        </div>
+
+    </section>
+
+    <script src="js/productos.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>

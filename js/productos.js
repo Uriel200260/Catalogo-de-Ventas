@@ -1,14 +1,25 @@
 const contenedor = document.getElementById("productos");
+const buscador = document.getElementById("buscar");
+const categoria = document.getElementById("categoria");
 
+let listaProductos = [];
+
+//Cargar productos
 fetch("data/productos.json")
-
     .then(respuesta => respuesta.json())
-
     .then(productos => {
+        listaProductos = productos;
+        mostrarProductos(listaProductos);
+    });
 
-        productos.forEach(producto => {
+//Funcion para mostrar productos
+function mostrarProductos(productos) {
 
-            contenedor.innerHTML += `
+    contenedor.innerHTML = "";
+
+    productos.forEach(producto => {
+
+        contenedor.innerHTML += `
 
         <div class="col-md-4 mb-4">
 
@@ -48,6 +59,38 @@ fetch("data/productos.json")
 
         `;
 
-        });
-
     });
+
+}
+
+//Funcion para aplicar los filtros
+function aplicarFiltros() {
+
+    const texto = buscador ? buscador.value.toLowerCase() : "";
+    const categoriaSeleccionada = categoria ? categoria.value : "Todas";
+
+    const filtrados = listaProductos.filter(producto => {
+        const coincideTexto =
+            producto.nombre.toLowerCase().includes(texto) ||
+            producto.descripcion.toLowerCase().includes(texto);
+
+        const coincideCategoria =
+            categoriaSeleccionada === "Todas" ||
+            producto.categoria === categoriaSeleccionada;
+
+        return coincideTexto && coincideCategoria;
+    });
+
+    mostrarProductos(filtrados);
+}
+
+//Evento del Buscador en tiempo real
+if(buscador){
+    buscador.addEventListener("keyup",aplicarFiltros);
+}
+
+//Evento del selector de categorias
+if(categoria){
+    categoria.addEventListener("change",aplicarFiltros)
+}
+

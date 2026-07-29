@@ -5,23 +5,25 @@
         "descripcion": "Casa para perro fabricada en madera resistente, ideal para mantener a tu mascota protegida del sol. <br><br><b>Características:</b> <br>✅ Elaborada con madera calida resistente.<br>✅ Acabado con protector para mayor durabilidad.<br>✅ Dos compartimentos para alimento.<br>✅ Base elevada que evita el contacto directo con el suelo.<br>✅ Amplia entrada para mayor comodidad con ventilacion en ambos costados.<br>✅ Ideal para perros chicos y medianos <br>Perfecta para patios, jardines y ranchos.<br><br>📍 Entrega en Ciudad Valles. <br><b>💬 Envíame mensaje para más información, medidas o cotización personalizada.",
         "precio": "2900",
         "imagen": "img/Casa para Perro.jpg",
-        "categoria": "Muebles",
+        "categoria": "Mascotas",
         "estado": "Nuevo"
     },
     {
         "id": 2,
-        "nombre": "Xbox One",
-        "descripcion": "Incluye control y 2 juegos.",
-        "precio": 3800,
-        "imagen": "img/xbox.jpg",
-        "categoria": "Videojuegos"
+        "nombre": "Bicicleta rodada 20 con freno de pedal.",
+        "descripcion": "Bicicleta de montaña rodada 20, con freno de pedal y rin trasero nuevo. En excelentes condiciones..",
+        "precio": 900,
+        "imagen": "img/bicicleta.jpg",
+        "categoria": "Bicicletas",
+        "estado": "Usado-En buen estado"
     },
     {
         "id": 3,
-        "nombre": "Smartwatch",
-        "descripcion": "Como nuevo.",
-        "precio": 1200,
-        "imagen": "img/reloj.jpg",
-        "categoria": "Accesorios"
+        "nombre": "¡Delicioso Pay de Queso por Pedido😋",
+        "descripcion": "Disfruta de nuestro exquisito pay de queso, preparado con ingredientes frescos y de alta calidad. Perfecto para cualquier ocasión, ya sea una celebración o un antojo personal. Haz tu pedido hoy y deleita a tus seres queridos con este irresistible postre. ¡Te esperamos! 😋.",
+        "precio": 220,
+        "imagen": "img/paydequeso.jpg",
+        "categoria": "Reposteria",
+        "estado": "Nuevo"
     }
 ]
